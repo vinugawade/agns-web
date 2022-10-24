@@ -1,0 +1,44 @@
+label: लोक
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      title: लोक
+      fields:
+        name:
+          label: सदस्यनाम
+        status:
+          label: वर्तमानस्थिती
+          settings:
+            format_custom_false: प्रतिबंधीत
+            format_custom_true: सक्रिय
+        roles_target_id:
+          label: वर्तनमर्यादा
+        created:
+          label: 'च्यासाठी सभासद'
+        operations:
+          label: कृती
+        mail:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      filters:
+        status:
+          group_info:
+            label: वर्तमानस्थिती
+            group_items:
+              1:
+                title: सक्रिय
+              2:
+                title: प्रतिबंधीत
+      use_more_text: आणखी
+  page_1:
+    display_title: पान
+    display_options:
+      menu:
+        title: यादी
+      tab_options:
+        title: लोक

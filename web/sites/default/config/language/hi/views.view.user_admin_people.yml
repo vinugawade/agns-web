@@ -1,0 +1,64 @@
+label: कर्मचारी
+description: 'अपनी साइट के साथ सहभागिता करने वाले लोगों को ढूंढें और प्रबंधित करें।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: कर्मचारी
+      fields:
+        name:
+          label: 'प्रयोक्ता का नाम'
+        status:
+          label: अवस्था
+          settings:
+            format_custom_false: बंद
+            format_custom_true: सक्रिय
+        roles_target_id:
+          label: भूमिका
+        created:
+          label: 'के लिये सदस्य'
+        access:
+          label: 'अंतिम पहुंच'
+        operations:
+          label: कार्यवाही
+        mail:
+          separator: ', '
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      filters:
+        combine:
+          expose:
+            label: 'नाम या ईमेल में है'
+        status:
+          group_info:
+            label: अवस्था
+            group_items:
+              1:
+                title: सक्रिय
+              2:
+                title: बंद
+        roles_target_id:
+          expose:
+            label: भूमिका
+        permission:
+          expose:
+            label: अनुमति
+      use_more_text: 'और भी'
+  page_1:
+    display_title: पृष्ठ
+    display_options:
+      menu:
+        title: सूची
+        description: 'अपनी साइट के साथ सहभागिता करने वाले लोगों को ढूंढें और प्रबंधित करें।'
+      tab_options:
+        title: कर्मचारी
+        description: 'उपयोगकर्ता खातों, भूमिकाओं और अनुमतियों का प्रबंधन करें.'

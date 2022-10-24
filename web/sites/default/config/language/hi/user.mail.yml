@@ -1,0 +1,10 @@
+register_pending_approval_admin:
+  body: "[उपयोगकर्ता:display-name] ने एक खाते के लिए आवेदन किया है।\r\n\r\n[उपयोगकर्ता:edit-url]"
+status_activated:
+  subject: '[साइट:name] (स्वीकृत) पर [उपयोगकर्ता:display-name] के लिए खाता विवरण'
+status_blocked:
+  subject: '[साइट:name] (ब्लॉक) पर [उपयोगकर्ता:display-name] के लिए खाता विवरण'
+  body: "[उपयोगकर्ता:display-name],\r\n\r\n[साइट:name] पर आपका खाता ब्लॉक कर दिया गया है।\r\n\r\n- [साइट:name] टीम"
+status_canceled:
+  subject: '[साइट:name] (रद्द) पर [उपयोगकर्ता:display-name] के लिए खाता विवरण'
+  body: "[user:display-name],\r\n\r\nआपका लेखा  [site:name]  से रद्द कर दिया गया है\r\n--  [site:name] गुट"

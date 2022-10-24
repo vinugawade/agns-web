@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      fields:
+        title:
+          label: शीर्षक
+        name:
+          label: लेखक
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+  page_1:
+    display_title: पान

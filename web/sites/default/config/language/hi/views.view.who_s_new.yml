@@ -1,0 +1,19 @@
+label: 'नए सदस्य'
+description: 'साइट पर नवीनतम उपयोगकर्ता खातों की एक सूची दिखाता है।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: 'नए सदस्य'
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+  block_1:
+    display_title: 'नए सदस्य'
+    display_options:
+      display_description: 'नये उपयोगकर्ताओं की सूची'
+      block_description: 'नए सदस्य'
+      block_category: प्रयोक्ता

@@ -1,0 +1,98 @@
+label: टिप्पणियाँ
+description: 'टिप्पणियों को ढूंढें और प्रबंधित करें।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: टिप्पणियाँ
+      fields:
+        comment_bulk_form:
+          action_title: कार्रवाई
+        subject:
+          label: विषय
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: लेखक
+          separator: ', '
+        entity_id:
+          label: 'में प्रकाशित किया गया था'
+          separator: ', '
+        changed:
+          label: अद्यतित
+          separator: ', '
+        operations:
+          label: कार्यवाही
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'अगला >'
+            previous: '‹ पिछले'
+            first: '« प्रथम'
+            last: 'अन्तिम »'
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      empty:
+        area_text_custom:
+          content: 'कोई कमेन्ट उपलब्ध नहीं है|'
+      filters:
+        subject:
+          expose:
+            label: विषय
+        langcode:
+          expose:
+            label: भाषा
+      use_more_text: 'और भी'
+  page_published:
+    display_title: 'प्रकाशित कमेन्ट'
+    display_options:
+      display_description: 'स्वीकृत टिप्पणियों की सूची।'
+      menu:
+        title: टिप्पणियाँ
+        description: 'टिप्पणियाँ प्रकाशित हुईं'
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: कार्रवाई
+        subject:
+          label: विषय
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: लेखक
+          separator: ', '
+        entity_id:
+          label: 'में प्रकाशित किया गया था'
+          separator: ', '
+        changed:
+          label: अद्यतित
+          separator: ', '
+        operations:
+          label: कार्यवाही
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: विषय
+        combine:
+          expose:
+            label: 'लेखक का नाम'
+        langcode:
+          expose:
+            label: भाषा
+      display_description: 'अनपेक्षित टिप्पणियों की सूची।'
+      menu:
+        description: 'टिप्पणियाँ अप्राप्त हैं'

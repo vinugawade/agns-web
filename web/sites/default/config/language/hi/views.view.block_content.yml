@@ -1,0 +1,44 @@
+label: 'कस्टम ब्लॉक पुस्तकालय'
+description: 'कस्टम ब्लॉक ढूंढें और प्रबंधित करें।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: 'कस्टम ब्लॉक पुस्तकालय'
+      fields:
+        info:
+          label: 'ब्लॉक की व्याख्या'
+          separator: ', '
+        type:
+          label: 'ब्लॉक प्रकार'
+          separator: ', '
+        changed:
+          label: अद्यतित
+        operations:
+          label: कार्यवाही
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      empty:
+        area_text_custom:
+          content: 'कोई कस्टम ब्लॉक उपलब्ध नहीं हैं।'
+      filters:
+        info:
+          expose:
+            label: 'ब्लॉक की व्याख्या'
+        type:
+          expose:
+            label: 'ब्लॉक प्रकार'
+  page_1:
+    display_title: पृष्ठ
+    display_options:
+      menu:
+        title: 'कस्टम ब्लॉक पुस्तकालय'

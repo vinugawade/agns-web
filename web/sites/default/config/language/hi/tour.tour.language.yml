@@ -1,0 +1,12 @@
+label: भाषा
+tips:
+  language-overview:
+    label: भाषायें
+  language-reorder:
+    label: 'भाषाओं पुनर्व्यवस्था'
+  language-default:
+    label: 'डिफ़ॉल्ट के रूप में एक भाषा सेट करें'
+  language-operations:
+    label: 'भाषाओं में संशोधन'
+  language-continue:
+    label: 'पर जारी है'

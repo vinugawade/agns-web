@@ -1,0 +1,134 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: निर्मित
+          separator: ', '
+        remote_addr:
+          label: 'आईपी अड्रेस'
+          separator: ', '
+        view_webform_submission:
+          label: कार्यवाही
+          text: देखें
+      arguments:
+        in_draft:
+          exception:
+            title: सभी
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: कार्रवाई
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: मुख्य
+          separator: ', '
+        locked:
+          label: अवरोधित
+          separator: ', '
+        created:
+          label: निर्मित
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'आईपी अड्रेस'
+          separator: ', '
+        operations:
+          label: कार्यवाही
+      filters:
+        sticky:
+          expose:
+            label: मुख्य
+        locked:
+          expose:
+            label: अवरोधित
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: कार्रवाई
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: मुख्य
+          separator: ', '
+        locked:
+          label: अवरोधित
+          separator: ', '
+        created:
+          label: निर्मित
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'आईपी अड्रेस'
+          separator: ', '
+        view_webform_submission:
+          label: कार्यवाही
+          text: देखें
+        edit_webform_submission:
+          label: कार्यवाही
+          text: 'संपादन करें'
+      filters:
+        sticky:
+          expose:
+            label: मुख्य
+        locked:
+          expose:
+            label: अवरोधित
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: मुख्य
+          separator: ', '
+        locked:
+          label: अवरोधित
+          separator: ', '
+        created:
+          label: निर्मित
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'आईपी अड्रेस'
+          separator: ', '
+        view_webform_submission:
+          label: कार्यवाही
+          text: देखें
+      filters:
+        sticky:
+          expose:
+            label: मुख्य
+        locked:
+          expose:
+            label: अवरोधित

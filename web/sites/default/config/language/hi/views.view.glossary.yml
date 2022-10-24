@@ -1,0 +1,34 @@
+label: शब्दकोष
+description: 'सभी सामग्री, पत्र द्वारा।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      fields:
+        title:
+          label: शीर्षक
+        name:
+          label: लेखक
+        changed:
+          label: 'आखरी बार सुधार'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+  attachment_1:
+    display_title: संलग्नी
+  page_1:
+    display_title: पृष्ठ
+    display_options:
+      menu:
+        title: शब्दकोष

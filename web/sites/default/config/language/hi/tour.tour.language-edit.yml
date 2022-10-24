@@ -1,0 +1,12 @@
+label: 'संपादन भाषाओं'
+tips:
+  language-edit-overview:
+    label: 'संपादन भाषाओं'
+  language-edit-langcode:
+    label: 'भाषा कोड'
+  language-edit-label:
+    label: 'भाषा नाम'
+  language-edit-direction:
+    label: 'भाषा की दिशा'
+  language-edit-continue:
+    label: 'पर जारी है'

@@ -1,0 +1,32 @@
+label: पुरालेख
+description: 'सभी सामग्री, महीने के हिसाब से।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: 'मासिक पुरालेख'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      arguments:
+        created_year_month:
+          title: '{{ arguments.created_year_month }}'
+  block_1:
+    display_title: ब्लॉक
+    display_options:
+      arguments:
+        created_year_month:
+          title: '{{ arguments.created_year_month }}'
+  page_1:
+    display_title: पृष्ठ

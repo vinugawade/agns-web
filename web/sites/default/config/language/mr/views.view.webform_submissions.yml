@@ -1,0 +1,108 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: प्रकाशन
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: कृती
+          text: दाखवा
+      arguments:
+        in_draft:
+          exception:
+            title: सर्व
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: कृती
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: कुपुपबंद
+          separator: ', '
+        created:
+          label: प्रकाशन
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        operations:
+          label: कृती
+      filters:
+        locked:
+          expose:
+            label: कुपुपबंद
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: कृती
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: कुपुपबंद
+          separator: ', '
+        created:
+          label: प्रकाशन
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: कृती
+          text: दाखवा
+        edit_webform_submission:
+          label: कृती
+          text: संपादन
+      filters:
+        locked:
+          expose:
+            label: कुपुपबंद
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: कुपुपबंद
+          separator: ', '
+        created:
+          label: प्रकाशन
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: कृती
+          text: दाखवा
+      filters:
+        locked:
+          expose:
+            label: कुपुपबंद

@@ -1,0 +1,13 @@
+settings:
+  default_submit_button_label: 'जमा करें'
+  default_reset_button_label: 'दोबारा से स्थापित करें|'
+  default_delete_button_label: मिटायें
+  default_preview_next_button_label: पूर्वावलोकन
+  default_preview_label: पूर्वावलोकन
+  dialog_options:
+    narrow:
+      title: संकीर्ण
+    wide:
+      title: चौड़ा
+element:
+  default_more_title: अधिक

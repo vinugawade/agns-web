@@ -1,0 +1,48 @@
+label: फाईल्स
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      title: फाईल्स
+      fields:
+        filename:
+          label: नाव
+          separator: ', '
+        filesize:
+          label: आकार
+        status:
+          label: वर्तमानस्थिती
+        created:
+          label: 'अपलोड केल्याची तारीख'
+        changed:
+          label: 'बदल केल्याची तारीख'
+        count:
+          label: 'कोठे वापरली आहे'
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      filters:
+        filename:
+          expose:
+            label: 'फाईलचे नाव'
+        status:
+          expose:
+            label: वर्तमानस्थिती
+  page_1:
+    display_title: 'फाईल्सचा आढावा'
+    display_options:
+      menu:
+        title: फाईल्स
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: 'एंटिटीचा प्रकार'
+        count:
+          label: 'उपयोगकर्त्यांची संख्या'
+      arguments:
+        fid:
+          exception:
+            title: सर्व

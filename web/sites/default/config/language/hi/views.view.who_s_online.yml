@@ -1,0 +1,29 @@
+label: 'ऑनलाइन ब्लॉक कौन है'
+description: 'सबसे हाल ही में सक्रिय उपयोगकर्ताओं और सक्रिय उपयोगकर्ताओं की कुल संख्या के उपयोगकर्ता नाम दिखाता है।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: उपस्थिति
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      empty:
+        area_text_custom:
+          content: 'वर्तमान में 0 यूजर ऑनलाइन हैं।'
+      filters:
+        access:
+          expose:
+            label: 'अंतिम पहुंच'
+            description: 'किसी सदस्य ने पन्ना पढ़ने पर उसे इतने समय तक उपस्थित माना जाता है।'
+      header:
+        result:
+          content: 'वर्तमान में @total उपयोगकर्ता ऑनलाइन हैं।'
+  who_s_online_block:
+    display_title: उपस्थिति
+    display_options:
+      display_description: 'वर्तमान में लॉग इन किए गए उपयोगकर्ताओं की एक सूची।'
+      block_description: उपस्थिति

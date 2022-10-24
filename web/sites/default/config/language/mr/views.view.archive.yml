@@ -1,0 +1,12 @@
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+  block_1:
+    display_title: भाग
+  page_1:
+    display_title: पान

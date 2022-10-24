@@ -1,0 +1,8 @@
+settings:
+  default_submit_button_label: 'सुपूर्द करणे'
+  default_reset_button_label: पुर्ववत
+  default_delete_button_label: मिटवा
+  default_preview_next_button_label: पुर्वदृश्य
+  default_preview_label: पुर्वदृश्य
+element:
+  default_more_title: अधिक

@@ -1,0 +1,51 @@
+label: साहित्य
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      title: साहित्य
+      fields:
+        title:
+          label: शीर्षक
+        type:
+          separator: ', '
+        name:
+          label: लेखक
+        status:
+          label: वर्तमानस्थिती
+          settings:
+            format_custom_false: अप्रकाशित
+            format_custom_true: प्रकाशित
+        changed:
+          label: सुधारित
+        operations:
+          label: कृती
+      exposed_form:
+        options:
+          submit_button: गाळणी
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+      filters:
+        title:
+          expose:
+            label: शीर्षक
+        status:
+          expose:
+            label: वर्तमानस्थिती
+          group_info:
+            label: 'प्रकाशन अवस्था'
+            group_items:
+              1:
+                title: प्रकाशित
+              2:
+                title: अप्रकाशित
+        langcode:
+          expose:
+            label: भाषा
+  page_1:
+    display_title: पान
+    display_options:
+      menu:
+        title: साहित्य
+      tab_options:
+        title: साहित्य

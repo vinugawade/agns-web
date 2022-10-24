@@ -1,0 +1,14 @@
+label: 'हाल के कमेन्ट'
+description: 'हाल की टिप्पणियाँ'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: 'हाल के कमेन्ट'
+      empty:
+        area_text_custom:
+          content: 'कोई कमेन्ट उपलब्ध नहीं है|'
+  block_1:
+    display_title: ब्लॉक
+    display_options:
+      block_description: 'हाल के कमेन्ट'

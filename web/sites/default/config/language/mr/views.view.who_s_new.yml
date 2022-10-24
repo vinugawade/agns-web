@@ -1,0 +1,15 @@
+label: 'नविन सदस्य'
+display:
+  default:
+    display_title: मुळस्वरुप
+    display_options:
+      title: 'नविन सदस्य'
+      exposed_form:
+        options:
+          reset_button_label: पुर्ववत
+          exposed_sorts_label: 'क्रमवारी नुसार लावा'
+  block_1:
+    display_title: 'नविन सदस्य'
+    display_options:
+      block_description: 'नविन सदस्य'
+      block_category: सदस्य

@@ -1,0 +1,56 @@
+label: सामग्री
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      title: सामग्री
+      fields:
+        title:
+          label: शीर्षक
+        type:
+          label: 'सामग्री प्रकार'
+          separator: ', '
+        name:
+          label: लेखक
+        status:
+          label: अवस्था
+          settings:
+            format_custom_false: अप्रकाशित
+            format_custom_true: प्रकाशित
+        changed:
+          label: अद्यतित
+        operations:
+          label: कार्यवाही
+      exposed_form:
+        options:
+          submit_button: फिल्टर
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      filters:
+        title:
+          expose:
+            label: शीर्षक
+        type:
+          expose:
+            label: 'सामग्री प्रकार'
+        status:
+          expose:
+            label: अवस्था
+          group_info:
+            group_items:
+              1:
+                title: प्रकाशित
+              2:
+                title: अप्रकाशित
+        langcode:
+          expose:
+            label: भाषा
+  page_1:
+    display_title: पृष्ठ
+    display_options:
+      menu:
+        title: सामग्री
+      tab_options:
+        title: सामग्री
+        description: 'सामग्री ढूंढें और प्रबंधित करें'

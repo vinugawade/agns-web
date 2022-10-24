@@ -1,0 +1,17 @@
+description: 'हाल की सामग्री।'
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      fields:
+        changed:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: 'लागू करें'
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      use_more_text: अधिक
+  block_1:
+    display_title: ब्लॉक
