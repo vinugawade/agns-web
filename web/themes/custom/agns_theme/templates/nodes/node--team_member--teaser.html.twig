@@ -1,0 +1,36 @@
+<div class="team-member" data-animate="fadeIn">
+  <div class="team-image">
+    {{ content.field_image }}
+  </div>
+  <div class="team-desc">
+    <h3>{{ node.title.value }}</h3>
+
+    <span>{{ node.field_position.value }}</span>
+    <div>
+      {{ node.body.value|raw }}
+    </div>
+
+    {% set node_url = url('<front>')|render ~ url %}
+    <div class="align-center share-group">
+      <a class="btn-share" href="https://www.facebook.com/sharer.php?u={{ node_url }}" target="_blank" rel="nofollow">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+      <a class="btn-share" href="https://twitter.com/share?url={{ node_url }}&amp;text={{ node.title.value }}"
+         target="_blank" rel="nofollow">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a class="btn-share" href="https://www.instagram.com/?url={{ node_url }}" target="_blank" rel="nofollow">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a class="btn-share" href="mailto:?subject={{ node.title.value }}&body={{ node.title.value }} - {{ node_url }}"
+         target="_blank" rel="nofollow">
+        <i class="icon-mail"></i>
+        <span>Mail</span>
+      </a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{% block paragraph %}
+  <div>
+    {% block content %}
+      {% set bg_image = (paragraph.field_background_image.target_id) ? file_url(paragraph.field_background_image.entity.uri.value) : '' %}
+
+      {% set color_text = (paragraph.field_background_image.target_id) ? 'text-light has-bgmg' : 'no-backgound' %}
+
+
+      <section id="page-title" class="background-image {{ color_text }}"
+               style="background-image:url('{{ bg_image }}');">
+        <div class="container">
+          <div class="page-title">
+            {% if paragraph.field_block_title.value  is not empty %}
+              <h1 class="block-title">{{ paragraph.field_block_title.value }}</h1>
+            {% endif %}
+
+            {% if paragraph.field_subtitle.value  is not empty %}
+              <div class="block-desc">{{ paragraph.field_subtitle.value|raw }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

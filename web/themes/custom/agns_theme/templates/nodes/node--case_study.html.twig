@@ -1,0 +1,72 @@
+{% set bg_image = (node.field_header_banner.target_id) ? file_url(node.field_header_banner.entity.uri.value) : '/themes/agns_theme/assets/images/case-study-hero.jpg' %}
+
+<section id="page-title" class="background-image has-bgmg" style="background-image:url('{{ bg_image }}');">
+  <div class="container">
+    <div class="page-title">
+      <div data-animate="fadeIn" class="text-light">
+        <h1>{{ node.title.value }}</h1>
+      </div>
+      <div class="portfolio-attributes style1 text-light">
+        <div class="attribute" data-animate="fadeInUp" data-animate-delay="1000">
+          <strong>Client:</strong> <span class="attribute-field-value">{{ node.field_client.value }}</span></div>
+        <div class="attribute" data-animate="fadeInUp" data-animate-delay="1400">
+          <strong>Service:</strong> <span class="attribute-field-value">{{ content.field_services }}</span> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="page-content" class="pb-0 node-cs section_group">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-xl-3">
+        <div class="portfolio-attributes style2">
+          <div class="attribute"><strong>Client:</strong> {{ node.field_client.value }}</div>
+          <div class="attribute"><strong>Service:</strong> {{ content.field_services }}</div>
+          {% if node.field_website.value is not empty %}
+            <div class="attribute"><strong>Website:</strong>
+              <a href="https://{{ node.field_website.value }}" target="_blank"
+                 class="case-study-client">{{ node.field_website.value }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-xl-9">
+        <div class="cs-overview">
+          {{ content.field_intro_text }}
+        </div>
+        <div class="images">
+          {{ content.field_case_images }}
+        </div>
+        <div class="project-description">
+          {{ content.body }}
+        </div>
+        <div class="project-description about">
+          {{ content.about }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="post-navigation">
+
+    {% if node_prev is not empty %}
+      <a href="{{ node_prev['url'] }}" class="post-prev">
+        <div class="post-prev-title"><span>Previous Client</span>{{ node_prev['title'] }}</div>
+      </a>
+    {% endif %}
+
+    <a href="/clients" class="post-all">
+      <i class="icon-grid"> </i>
+    </a>
+
+    {% if node_next is not empty %}
+      <a href="{{ node_next['url'] }}" class="post-next">
+        <div class="post-next-title"><span>Next Client</span>{{ node_next['title'] }}</div>
+      </a>
+    {% endif %}
+  </div>
+
+
+</section>

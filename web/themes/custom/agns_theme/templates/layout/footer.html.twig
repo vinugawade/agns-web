@@ -1,0 +1,9 @@
+{% set footer_classes = ' ' ~
+  (b4_footer_schema != 'none' ? " footer-#{b4_footer_schema}" : ' ') ~
+  (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ') %}
+{% if page.footer %}
+  <footer id="footer">
+    {{ page.footer }}
+  </footer>
+{% endif %}

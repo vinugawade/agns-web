@@ -1,0 +1,71 @@
+{% set bg_image = (node.field_image.target_id) ? file_url(node.field_image.entity.uri.value) : '/themes/agns_theme/assets/images/article-hero.jpg' %}
+
+<section id="page-title" class="page-title-center text-light post-full-header"
+         style="background-image:url('{{ bg_image }}');">
+  <div class="bgdr-overlay"></div>
+  <div class="container">
+    <div class="page-title">
+      <div class="post-meta-category text-light" data-animate="fadeInUp"
+           data-animate-delay="500">{{ content.field_categories|render|striptags('<a>') | raw }}</div>
+      <h1 class="post-title" data-animate="fadeInUp" data-animate-delay="700">{{ node.title.value }}</h1>
+      <div class="small" data-animate="fadeInUp" data-animate-delay="900"><i
+          class="fa fa-calendar-o"></i>{{ node.createdtime | date('F j, Y') }}</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="node-full post-full">
+  <div class="container">
+    <div class="post-body">
+      {{ content.body }}
+    </div>
+
+    <div class="post-tags">
+      {{ content.field_tags|render|striptags('<a>') | raw }}
+    </div>
+
+    <div class="article-share text-center pt-4" data-animate="fadeIn">
+      <h4>Share this article</h4>
+      {% set node_url = url('<front>')|render ~ url %}
+      <div class="align-center share-group share-big">
+        <a class="btn-share" href="https://www.facebook.com/sharer.php?u={{ node_url }}" target="_blank" rel="nofollow">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a class="btn-share" href="https://twitter.com/share?url={{ node_url }}&amp;text={{ node.title.value }}"
+           target="_blank" rel="nofollow">
+          <i class="fab fa-twitter"></i>
+          <span>Twitter</span>
+        </a>
+        <a class="btn-share" href="https://www.instagram.com/?url={{ node_url }}" target="_blank" rel="nofollow">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a class="btn-share" href="mailto:?subject={{ node.title.value }}&body={{ node.title.value }} - {{ node_url }}"
+           target="_blank" rel="nofollow">
+          <i class="icon-mail"></i>
+          <span>Mail</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="post-navigation">
+      {% if node_prev is not empty %}
+        <a href="{{ node_prev['url'] }}" class="post-prev">
+          <div class="post-prev-title"><span>Previous Post</span>{{ node_prev['title'] }}</div>
+        </a>
+      {% endif %}
+      <a href="/news" class="post-all">
+        <i class="icon-grid"> </i>
+      </a>
+      {% if node_next is not empty %}
+        <a href="{{ node_next['url'] }}" class="post-next">
+          <div class="post-next-title"><span>Next Post</span>{{ node_next['title'] }}</div>
+        </a>
+      {% endif %}
+    </div>
+
+  </div>
+
+</div>

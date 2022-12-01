@@ -1,0 +1,17 @@
+<div class="portfolio-images">
+  {% if  items|length > 1 %}
+    <div class="portfolio-slider">
+        <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
+          {% for item in items %}
+            <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+          {% endfor %}
+        </div>
+    </div>
+  {% else %}
+    <div class="portfolio-image">
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

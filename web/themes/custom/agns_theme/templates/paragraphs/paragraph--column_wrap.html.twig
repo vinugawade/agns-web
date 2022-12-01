@@ -1,0 +1,25 @@
+{% set classes = [
+  'block-column-wrap',
+  'block--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'block--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'block--unpublished',
+] %}
+
+{% set animate = '' %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }} >
+    {% block content %}
+      <div class="row">
+        {% for key, column_item in content.field_column_item|children %}
+          {% if paragraph.field_column_item[key].entity.field_animate.value is not empty %}
+            {% set animate = 'data-animate="' ~ paragraph.field_column_item[key].entity.field_animate.value ~ '"' %}
+          {% endif %}
+          <div
+            class="col side-{{ key }} {{ paragraph.field_extra_class.value }} {{ paragraph.field_column_item[key].entity.field_extra_class.value }}" {{ animate|raw }} >
+            {{ column_item }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -1,0 +1,27 @@
+{% set classes = [
+  'counter-box',
+  'text-center',
+  'block--type--' ~ paragraph.bundle|clean_class,
+  'icon-on-'~paragraph.field_image_position.value,
+  paragraph.field_extra_class.value,
+  view_mode ? 'block--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'block--unpublished',
+] %}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }} >
+    {% block content %}
+      <div {{ attributes.addClass(classes) }} >
+        <div class="counter-icon">{{ content.field_icon }}</div>
+        <div class="counter-number">
+          <span data-to="{{ paragraph.field_number_text.value }}" data-speed="3000" data-refresh-interval="50"
+                data-from="100" data-seperator="true">{{ paragraph.field_number_text.value }}</span>
+        </div>
+        {% if paragraph.field_block_title.value  is not empty %}
+          <div class="seperator"></div>
+          <div class="counter-title">{{ paragraph.field_block_title.value }}</div>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

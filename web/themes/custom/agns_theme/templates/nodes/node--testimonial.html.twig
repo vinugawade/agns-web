@@ -1,0 +1,12 @@
+<div class="testimonial-box">
+
+  {{ content.field_image }}
+
+  <div class="tt-desc">{{ node.body.value|raw }}</div>
+  <div class="tt-title">{{ node.title.value }}</div>
+
+  {% if node.field_position.value is not empty %}
+    <div class="tt-position">{{ node.field_position.value }}</div>
+  {% endif %}
+
+</div>

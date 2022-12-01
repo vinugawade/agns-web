@@ -1,0 +1,113 @@
+<?php
+/**
+ * Place your custom PHP code in this file.
+ */
+
+use Drupal\node\Entity\Node;
+
+
+function agns_theme_preprocess_html(&$variables) {
+  $view_id = \Drupal::routeMatch()->getRouteObject()->getDefault('view_id');
+  if (!empty($view_id) && in_array($view_id, ['clients', 'news'])) {
+    $variables['attributes']['class'][] = 'header-overlay';
+  }
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    // When using Revisions, node is a string of the nid.
+    //  If so load it.
+    if (is_string($node)) {
+      $node = Node::load($node);
+    }
+
+    $variables['attributes']['class'][] = 'page-node-' . $node->id();
+
+    if (!empty($node->field_header_overlay->value) || in_array($node->bundle(), [
+        'case_study',
+        'article',
+      ])) {
+      $variables['attributes']['class'][] = 'header-overlay';
+    }
+  }
+  else {
+    $variables['attributes']['class'][] = 'page-no-node';
+  }
+}
+
+
+function agns_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    // @todo check this function.
+    $node_tfull = ['page', 'case_study', 'article'];
+    if (in_array($content_type, $node_tfull)) {
+      $suggestions[] = 'page__full';
+    }
+  }
+
+  $view_id = \Drupal::routeMatch()->getRouteObject()->getDefault('view_id');
+  if (!empty($view_id) && $view_id == 'clients') {
+    $suggestions[] = 'page__full';
+  }
+
+}
+
+function agns_theme_preprocess_paragraph(&$variables) {
+}
+
+function agns_theme_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $type = $node->bundle();
+
+  switch ($type) {
+    case 'case_study':
+      $all_class = [];
+      $services = $node->get('field_services')->getValue();
+      if (!empty($services)) {
+        foreach ($services as $val) {
+          $all_class[] = 'cs-' . $val['target_id'];
+        }
+      }
+      $variables['sv_class'] = implode(' ', $all_class);
+      break;
+  }
+
+  if ($variables['view_mode'] == 'full') {
+    $variables['node_next'] = generateNextPrevNode($node->id(), $type, '');
+    $variables['node_prev'] = generateNextPrevNode($node->id(), $type, 'prev');
+  }
+
+}
+
+function generateNextPrevNode($crNid, $type, $direction = 'next') {
+  $opperator = '>';
+  $sort = 'ASC';
+  if ($direction === 'prev') {
+    $opperator = '<';
+    $sort = 'DESC';
+  }
+
+  $query = \Drupal::entityTypeManager()->getStorage('node');
+  $query_result = $query->getQuery();
+  $node_out = $query_result->condition('nid', $crNid, $opperator)
+    ->condition('type', $type)
+    ->condition('status', 1)
+    ->sort('nid', $sort)
+    ->range(0, 1)
+    ->execute();
+
+  if (!empty($node_out) && is_array($node_out)) {
+    $nid = implode('', $node_out);
+    $node_url = \Drupal::service('path_alias.manager')
+      ->getAliasByPath('/node/' . $nid);
+    $node_pn = Node::Load($nid);
+    $n_return = [
+      'url' => $node_url,
+      'title' => $node_pn->title->value,
+      'nid' => $nid,
+    ];
+
+    return $n_return;
+
+  }
+
+  return [];
+}

@@ -1,0 +1,15 @@
+<div class="post-item-wrap" data-animate="fadeIn">
+  <div class="post-image">
+    {{ content.field_image }}
+    <span class="post-meta-category">{{ content.field_categories }}</span>
+  </div>
+  <div class="post-item-description">
+    <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ node.createdtime | date('F j, Y') }}</span>
+    <h2><a href="{{ url }}">{{ node.title.value }}</a></h2>
+    <div>
+      {{ content.body }}
+    </div>
+
+    <a href="{{ url }}" class="item-link">Read More <i class="fa fa-angle-right"></i></a>
+  </div>
+</div>

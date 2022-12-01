@@ -1,0 +1,34 @@
+{% set classes = [
+  'icon-box',
+  'effect',
+  'block--type--' ~ paragraph.bundle|clean_class,
+  'icon-on-'~paragraph.field_image_position.value,
+  paragraph.field_extra_class.value,
+  view_mode ? 'block--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'block--unpublished',
+] %}
+
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }} data-animate="fadeInUp">
+    {% block content %}
+      <div class="icon-box-wrapper mx-auto">
+        <div class="icon-box-icon">
+          <div class="icon-inner">
+            {{ content.field_icon }}
+          </div>
+        </div>
+      </div>
+      <div class="icon-box-text">
+
+        {% if paragraph.field_block_title.value  is not empty %}
+          <h3 class="icon-title">{{ paragraph.field_block_title.value }}</h3>
+        {% endif %}
+
+        {% if paragraph.field_description.value  is not empty %}
+          <div class="icon-desc">{{ paragraph.field_description.value|raw }}</div>
+        {% endif %}
+
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

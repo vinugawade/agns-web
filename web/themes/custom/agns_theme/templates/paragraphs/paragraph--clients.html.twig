@@ -1,0 +1,46 @@
+{% set classes = [
+  'block-clients',
+  'block--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'block--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'block--unpublished',
+] %}
+{% block paragraph %}
+
+  <div {{ attributes.addClass(classes) }} >
+    {% if paragraph.field_layout.value == 'carousel' %}
+      <div>
+        <div class="carousel client-logos" data-items="6" data-items-sm="4" data-items-xs="3" data-items-xxs="2"
+             data-margin="20" data-arrows="false" data-autoplay="true" data-autoplay="3000" data-loop="true">
+          {% for key,item in paragraph.field_galleries %}
+            {% set client = (item.target_id) ? file_url(item.entity.uri.value) : '' %}
+            <div class="client-item">
+              <img src="{{ client }}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <ul class="grid grid-3-columns">
+        {% for key,item in paragraph.field_galleries %}
+          {% set client = (item.target_id) ? file_url(item.entity.uri.value) : '' %}
+          {% set alt = (item.target_id) ? item.alt : '' %}
+          {% set link = (item.target_id) ? item.title : '' %}
+          {% set client_class = (link) ? 'client-item has-link' : 'client-item' %}
+            <li class="{{ client_class }}">
+              {% if link is not empty %}
+                <a href="{{ link }}">
+              {% endif %}
+                  <img src="{{ client }}" alt="{{ alt }}">
+                  <div class="client-info text-light">
+                    <h3 class="client-name">{{ alt }}</h3>
+                  </div>
+              {% if link is not empty %}
+                </a>
+              {% endif %}
+            </li>
+        {% endfor %}
+      </ul>
+
+    {% endif %}
+  </div>
+{% endblock paragraph %}

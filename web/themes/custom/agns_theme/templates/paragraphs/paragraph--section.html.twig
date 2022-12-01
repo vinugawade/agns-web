@@ -1,0 +1,36 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  'section_group',
+  paragraph.field_wrap_class.value,
+] %}
+
+{% set background_image = (paragraph.field_background_image.target_id) ? file_url(paragraph.field_background_image.entity.uri.value) : '' %}
+{% set field_container = paragraph.field_container.value %}
+
+{% if field_container == 1 %}
+  {% set container_class = 'container' %}
+{% elseif field_container == 2 %}
+  {% set container_class = 'container_small' %}
+{% else %}
+  {% set container_class = 'container_full' %}
+{% endif %}
+
+{% block paragraph %}
+  <section {{ attributes.addClass(classes) }}
+    style="{% if paragraph.field_background_color is not empty %}background-color: {{ paragraph.field_background_color.color }};{% endif %}
+           {% if paragraph.field_text_color is not empty %}color: {{ paragraph.field_text_color.color }};{% endif %}
+      {% if paragraph.field_background_image.target_id %}background-image: url({{ background_image }});{% endif %}">
+
+    {% block content %}
+      <div class="{{ container_class }}">
+        <div class="block_content {{ paragraph.field_inner_class.value }}">
+          {{ content.field_component }}
+        </div>
+      </div>
+    {% endblock %}
+
+  </section>
+{% endblock paragraph %}

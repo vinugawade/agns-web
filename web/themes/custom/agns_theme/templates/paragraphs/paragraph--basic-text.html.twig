@@ -1,0 +1,19 @@
+{% set classes = [
+  'block--type--' ~ paragraph.bundle|clean_class,
+  paragraph.field_extra_class.value,
+  view_mode ? 'block--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'block--unpublished',
+] %}
+
+{% block paragraph %}
+  {% set animate = '' %}
+  {% if paragraph.field_animate.value is not empty %}
+    {% set animate = 'data-animate="' ~ paragraph.field_animate.value ~ '"' %}
+  {% endif %}
+
+  <div {{ attributes.addClass(classes) }} {{ animate|raw }} >
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
