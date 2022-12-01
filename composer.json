@@ -32,7 +32,8 @@
         "pantheon-systems/drupal-integrations": "^9",
         "pantheon-upstreams/upstream-configuration": "dev-main",
         "drupal/webform_content_creator": "^2.0",
-        "drupal/paragraphs": "^1.15"
+        "drupal/paragraphs": "^1.15",
+        "drupal/bootstrap4": "^2.1"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"

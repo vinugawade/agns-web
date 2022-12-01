@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2c3b7804bfb576d623f99c9cb4bde26",
+    "content-hash": "851a7917458732b8db4e5711767e60bd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1936,6 +1936,56 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/bootstrap4",
+            "version": "2.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap4.git",
+                "reference": "2.1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4-2.1.15.zip",
+                "reference": "2.1.15",
+                "shasum": "483abee391da096e1af748ca27b2dfd18b35241b"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.15",
+                    "datestamp": "1659076902",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Master theme using Bootstrap 4: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap4",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap4",
+                "issues": "https://www.drupal.org/project/issues/bootstrap4"
             }
         },
         {
