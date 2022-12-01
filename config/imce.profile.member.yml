@@ -10,8 +10,8 @@ description: 'Configuration for site members'
 conf:
   usertab: false
   extensions: 'jpg png gif'
-  maxsize: 2
-  quota: 50
+  maxsize: !!float 2
+  quota: !!float 50
   maxwidth: 1024
   maxheight: 1024
   replace: 0
