@@ -1,0 +1,20 @@
+uuid: 1e0f9b11-c7e8-43e2-83c6-2cf267e4b365
+langcode: en
+status: true
+dependencies:
+  theme:
+    - agns_theme
+_core:
+  default_config_hash: egguWbi3wNlOAJikKNRs_hzrzDd1DqLDXcJebf3lRvg
+id: agns_theme_local_actions
+theme: agns_theme
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions (Material Admin)'
+  label_display: '0'
+  provider: core
+visibility: {  }

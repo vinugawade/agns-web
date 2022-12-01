@@ -1,0 +1,22 @@
+uuid: d1319ef4-fa73-492f-8410-05073f74d37a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agns_theme
+_core:
+  default_config_hash: 6ANfHFYdqyPgGyd6fgurzphLbqLUVo2aa7rcjNyZ-_0
+id: agns_theme_messages
+theme: agns_theme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 7f1e9408-3303-486a-9a03-54ee132e1961
+langcode: en
+status: true
+dependencies:
+  theme:
+    - agns_theme
+_core:
+  default_config_hash: 9I_g1wEzqqihUALz9bYgroC-pDsv9GBfxui8HNsDO6M
+id: agns_theme_page_title
+theme: agns_theme
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title (Material Admin)'
+  label_display: '0'
+  provider: core
+visibility: {  }

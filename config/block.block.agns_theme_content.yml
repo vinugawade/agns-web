@@ -1,0 +1,22 @@
+uuid: 3664e0da-dc43-4aaf-b21e-6f5a1ad9f757
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agns_theme
+_core:
+  default_config_hash: NgLsbLszEUM6yHAE9EUvz8meZCPjf9g959hMEwrai6o
+id: agns_theme_content
+theme: agns_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
