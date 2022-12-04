@@ -26,6 +26,11 @@ include __DIR__ . "/settings.pantheon.php";
 // $settings['skip_permissions_hardening'] = TRUE;
 $settings['config_sync_directory'] = '../config';
 
+$settings['trusted_host_patterns'] = [
+  '^agns\.in$',
+  '*'
+];
+
 /**
  * If there is a local settings file, then include it
  */
