@@ -18,8 +18,8 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.2",
         "drupal/bricks": "^2.0",
-        "drupal/core-composer-scaffold": "^9.2",
-        "drupal/core-recommended": "^9.2",
+        "drupal/core-composer-scaffold": "9.4.8",
+        "drupal/core-recommended": "9.4.8",
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.0",
         "drupal/devel_kint_extras": "^1.1",
@@ -36,7 +36,7 @@
         "drupal/bootstrap4": "^2.1"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.2"
+        "drupal/core-dev": "9.4.8"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -114,7 +114,7 @@
         "preferred-install": "dist",
         "sort-packages": false,
         "platform": {
-            "php": "7.4"
+            "php": "8.0"
         },
         "allow-plugins": {
             "composer/installers": true,
