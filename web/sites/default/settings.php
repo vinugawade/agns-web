@@ -28,6 +28,7 @@ $settings['config_sync_directory'] = '../config';
 
 $settings['trusted_host_patterns'] = [
   '^agns\.in$',
+  'dev-test-agns.pantheonsite.io',
   '*'
 ];
 
