@@ -60,7 +60,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/libraries/
+# /web/libraries/
 /web/private/scripts/quicksilver
 
 
