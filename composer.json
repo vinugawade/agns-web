@@ -23,7 +23,7 @@
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.0",
         "drupal/devel_kint_extras": "^1.1",
-        "drupal/imce": "^2.5",
+        "drupal/imce": "^3.0",
         "drupal/material_admin": "^2.0",
         "drupal/recaptcha": "^3.1",
         "drupal/token": "^1.11",
@@ -55,11 +55,6 @@
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
-            },
-            "merge-plugin": {
-                "include": [
-                    "../composer.libraries.json"
-                ]
             }
         },
         "installer-paths": {
