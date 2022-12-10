@@ -9,12 +9,12 @@ _core:
 id: agns_theme_local_actions
 theme: agns_theme
 region: content
-weight: -10
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
-  label: 'Primary admin actions (Material Admin)'
+  label: 'Primary admin actions'
   label_display: '0'
   provider: core
 visibility: {  }

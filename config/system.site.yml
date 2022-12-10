@@ -2,13 +2,13 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 55ca7fbf-b0eb-421b-b884-818918ca1572
-name: test-agns
+name: AGNS
 mail: vinulike11@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/2
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

@@ -8,13 +8,13 @@ _core:
   default_config_hash: 9I_g1wEzqqihUALz9bYgroC-pDsv9GBfxui8HNsDO6M
 id: agns_theme_page_title
 theme: agns_theme
-region: header
-weight: -5
+region: content
+weight: -3
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title (Material Admin)'
+  label: 'Page title'
   label_display: '0'
   provider: core
 visibility: {  }

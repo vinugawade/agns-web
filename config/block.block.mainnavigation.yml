@@ -1,0 +1,25 @@
+uuid: ab4de31c-3e4d-4bb0-bce9-d8d21703b652
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - agns_theme
+id: mainnavigation
+theme: agns_theme
+region: nav_main
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 10d39745-8a98-4648-8c1f-7529ebd2a955
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - agns_theme
+id: sitebranding
+theme: agns_theme
+region: nav_main
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

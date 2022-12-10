@@ -17,22 +17,26 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
     '#type': textfield
+    '#title': 'Your Name'
+    '#placeholder': Name
+    '#autocomplete': 'off'
     '#required': true
     '#default_value': '[current-user:display-name]'
+  mobile_no:
+    '#type': tel
+    '#title': 'Mobile No'
+    '#placeholder': 'Mobile No'
+    '#autocomplete': ''
+    '#required': true
+    '#required_error': 'Please Enter Your Mobile Number'
   email:
-    '#title': 'Your Email'
     '#type': email
-    '#required': true
+    '#title': 'Your Email'
+    '#placeholder': Email
     '#default_value': '[current-user:mail]'
-  subject:
-    '#title': Subject
-    '#type': textfield
-    '#required': true
-    '#test': 'Testing contact webform from [site:name]'
   message:
     '#title': Message
     '#type': textarea
