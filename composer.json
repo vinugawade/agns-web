@@ -18,8 +18,8 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.2",
         "drupal/bricks": "^2.0",
-        "drupal/core-composer-scaffold": "9.4.8",
-        "drupal/core-recommended": "9.4.8",
+        "drupal/core-composer-scaffold": "9.4.9",
+        "drupal/core-recommended": "9.4.9",
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.0",
         "drupal/devel_kint_extras": "^1.1",
@@ -42,7 +42,7 @@
         "drupal/pathauto": "^1.11"
     },
     "require-dev": {
-        "drupal/core-dev": "9.4.8"
+        "drupal/core-dev": "9.4.9"
     },
     "conflict": {
         "drupal/drupal": "*"
