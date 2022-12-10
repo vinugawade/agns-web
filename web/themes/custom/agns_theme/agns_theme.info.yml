@@ -1,6 +1,6 @@
 name: 'AGNS Theme'
 type: theme
-description: 'Advance global network solution website theme.'
+description: "Advance global network solution's website theme."
 core_version_requirement: ^9 || ^10
 base theme: bootstrap4
 
