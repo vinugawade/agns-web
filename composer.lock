@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef7d1ee3904ffc3214d0be6ab6c0241",
+    "content-hash": "eb27b31f155c3a6d0e93bb94d64524e8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2721,6 +2721,52 @@
             }
         },
         {
+            "name": "drupal/font_awesome",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/font_awesome.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/font_awesome-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "3e44ebdb80c1508edebd3b8404b5dad919c2db99"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/lp_fontawesome": "^5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1591531994",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rodrigoaguilera",
+                    "homepage": "https://www.drupal.org/user/408170"
+                }
+            ],
+            "description": "Integrate Drupal with Font Awesome, the most popular icon set and toolkit on the web.",
+            "homepage": "https://www.drupal.org/project/font_awesome",
+            "support": {
+                "source": "https://gitlab.com/upstreamable/drupal-font-awesome",
+                "issues": "https://gitlab.com/upstreamable/drupal-font-awesome/issues"
+            }
+        },
+        {
             "name": "drupal/imce",
             "version": "3.0.4",
             "source": {
@@ -2768,6 +2814,65 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/imce",
                 "issues": "https://www.drupal.org/project/issues/imce"
+            }
+        },
+        {
+            "name": "drupal/lp_fontawesome",
+            "version": "5.15004.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/lp_fontawesome.git",
+                "reference": "8.x-5.15004"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lp_fontawesome-8.x-5.15004.zip",
+                "reference": "8.x-5.15004",
+                "shasum": "80ba7f6774fc6717ef8d514a9af8c8e47b585b87"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "require-dev": {
+                "upstreamable/md-to-html": "^1.0"
+            },
+            "suggest": {
+                "drupal/libraries_provider": "Configure version of fontawesome and load it from the local filesystem"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-5.15004",
+                    "datestamp": "1662569912",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "md-to-html": [
+                    "MdToHtml\\composer\\ScriptHandler::transform"
+                ],
+                "generate-readme": [
+                    "@md-to-html --remove-first-line README.md README.html"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rodrigoaguilera",
+                    "homepage": "https://www.drupal.org/user/408170"
+                }
+            ],
+            "description": "Defines fontawesome as library to be used with libraries provider",
+            "homepage": "https://www.drupal.org/project/lp_fontawesome",
+            "support": {
+                "source": "https://gitlab.com/upstreamable/drupal-lp-fontawesome",
+                "issues": "https://gitlab.com/upstreamable/drupal-lp-fontawesome/issues"
             }
         },
         {

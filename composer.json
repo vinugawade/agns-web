@@ -33,7 +33,8 @@
         "pantheon-upstreams/upstream-configuration": "dev-main",
         "drupal/webform_content_creator": "^2.0",
         "drupal/paragraphs": "^1.15",
-        "drupal/bootstrap4": "^2.1"
+        "drupal/bootstrap4": "^2.1",
+        "drupal/font_awesome": "^1.4"
     },
     "require-dev": {
         "drupal/core-dev": "9.4.8"
