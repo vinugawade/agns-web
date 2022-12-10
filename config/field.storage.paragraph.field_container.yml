@@ -1,0 +1,30 @@
+uuid: 6f5af0b0-1366-48b8-9fa6-b2c81ec78bcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_container
+field_name: field_container
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Full Width'
+    -
+      value: '1'
+      label: Container
+    -
+      value: '2'
+      label: 'Small Container'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

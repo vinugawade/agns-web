@@ -1,0 +1,35 @@
+uuid: 4f790f07-89ea-4e5d-8e84-81361f71bee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_custom_block
+    - paragraphs.paragraphs_type.blocks_embed
+  module:
+    - block_field
+id: paragraph.blocks_embed.field_custom_block
+field_name: field_custom_block
+entity_type: paragraph
+bundle: blocks_embed
+label: 'Custom Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: categories
+  selection_settings:
+    categories:
+      Block: Block
+      'Chaos Tools': 'Chaos Tools'
+      core: core
+      Custom: Custom
+      Forms: Forms
+      Help: Help
+      'Lists (Views)': 'Lists (Views)'
+      Menus: Menus
+      System: System
+      User: User
+      Webform: Webform
+field_type: block_field

@@ -1,0 +1,23 @@
+uuid: 912316aa-d4d7-4017-ba5e-f2dfb4539846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.clients
+  module:
+    - options
+id: paragraph.clients.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: clients
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: carousel
+default_value_callback: ''
+settings: {  }
+field_type: list_string

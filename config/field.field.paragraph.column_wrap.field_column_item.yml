@@ -1,0 +1,40 @@
+uuid: 187237df-3997-4485-a6ec-36e41e3dfe72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_item
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.column_wrap
+  module:
+    - entity_reference_revisions
+id: paragraph.column_wrap.field_column_item
+field_name: field_column_item
+entity_type: paragraph
+bundle: column_wrap
+label: 'Column Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      column: column
+    negate: 0
+    target_bundles_drag_drop:
+      basic_text:
+        weight: 5
+        enabled: false
+      column:
+        weight: 6
+        enabled: true
+      column_wrap:
+        weight: 7
+        enabled: false
+      section:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

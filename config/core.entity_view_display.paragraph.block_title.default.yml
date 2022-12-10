@@ -1,0 +1,33 @@
+uuid: 5cd2a8e8-662c-4283-b22a-a6c8344d5a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_title.field_animate
+    - field.field.paragraph.block_title.field_block_title
+    - field.field.paragraph.block_title.field_description
+    - field.field.paragraph.block_title.field_extra_class
+    - paragraphs.paragraphs_type.block_title
+id: paragraph.block_title.default
+targetEntityType: paragraph
+bundle: block_title
+mode: default
+content:
+  field_block_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_animate: true
+  field_extra_class: true

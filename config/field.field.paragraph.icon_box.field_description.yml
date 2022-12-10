@@ -1,0 +1,19 @@
+uuid: ab1a6cee-1c2d-437c-8c50-3a3a1e957695
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.icon_box
+id: paragraph.icon_box.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: icon_box
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,33 @@
+uuid: 436c3f1c-9cfa-442c-8915-a7de7eb41264
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.column_wrap.field_column_item
+    - field.field.paragraph.column_wrap.field_extra_class
+    - paragraphs.paragraphs_type.column_wrap
+  module:
+    - entity_reference_revisions
+id: paragraph.column_wrap.default
+targetEntityType: paragraph
+bundle: column_wrap
+mode: default
+content:
+  field_column_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_extra_class:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

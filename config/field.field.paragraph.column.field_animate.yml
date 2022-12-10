@@ -1,0 +1,21 @@
+uuid: 9ba6305c-4e40-443f-a901-cfc00d090ab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animate
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+id: paragraph.column.field_animate
+field_name: field_animate
+entity_type: paragraph
+bundle: column
+label: Animate
+description: 'Animation Reference <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,28 @@
+uuid: c7a45a48-f9a7-4f8c-87ea-b1ecad7a91da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clients.field_galleries
+    - field.field.paragraph.clients.field_layout
+    - paragraphs.paragraphs_type.clients
+  module:
+    - image
+id: paragraph.clients.default
+targetEntityType: paragraph
+bundle: clients
+mode: default
+content:
+  field_galleries:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_layout: true

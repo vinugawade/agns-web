@@ -1,0 +1,23 @@
+uuid: ddcc45d2-ddb5-4ad0-9bd9-c04b2369d1b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.galleries
+  module:
+    - options
+id: paragraph.galleries.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: galleries
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: carousel
+default_value_callback: ''
+settings: {  }
+field_type: list_string

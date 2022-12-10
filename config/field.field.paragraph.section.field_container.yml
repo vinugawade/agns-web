@@ -1,0 +1,23 @@
+uuid: 53c791c7-8779-440b-9b5c-e84c4a7f70ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_container
+field_name: field_container
+entity_type: paragraph
+bundle: section
+label: Container
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

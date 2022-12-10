@@ -1,0 +1,10 @@
+uuid: ef1b046c-9665-4e99-b0db-bf3569036e2e
+langcode: en
+status: true
+dependencies: {  }
+id: comp_image_box
+label: 'Component Image Box'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

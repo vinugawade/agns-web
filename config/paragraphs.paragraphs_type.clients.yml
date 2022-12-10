@@ -1,0 +1,10 @@
+uuid: bc91f75b-b07c-4e99-b52a-e582fa8aa178
+langcode: en
+status: true
+dependencies: {  }
+id: clients
+label: Clients
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

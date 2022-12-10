@@ -1,0 +1,21 @@
+uuid: 02707987-a415-49fb-99c6-def3ba9fe3e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_class
+    - paragraphs.paragraphs_type.column_wrap
+id: paragraph.column_wrap.field_extra_class
+field_name: field_extra_class
+entity_type: paragraph
+bundle: column_wrap
+label: 'Class for loop Column'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'col-12 col-md-4'
+default_value_callback: ''
+settings: {  }
+field_type: string

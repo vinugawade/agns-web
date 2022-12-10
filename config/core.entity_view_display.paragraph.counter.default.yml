@@ -1,0 +1,43 @@
+uuid: 404141b5-18a8-4c33-a18a-f626e1659558
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.counter.field_block_title
+    - field.field.paragraph.counter.field_icon
+    - field.field.paragraph.counter.field_number_text
+    - paragraphs.paragraphs_type.counter
+  module:
+    - font_awesome
+id: paragraph.counter.default
+targetEntityType: paragraph
+bundle: counter
+mode: default
+content:
+  field_block_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: font_awesome_icon
+    label: hidden
+    settings:
+      size: ''
+      fixed_width: fa-fw
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_number_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

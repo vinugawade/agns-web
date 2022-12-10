@@ -1,0 +1,93 @@
+uuid: ee514d65-6179-4c44-9e89-4767eedc029a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_animate
+field_name: field_animate
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fadeIn
+      label: fadeIn
+    -
+      value: fadeInDown
+      label: fadeInDown
+    -
+      value: fadeInLeft
+      label: fadeInLeft
+    -
+      value: fadeInRight
+      label: fadeInRight
+    -
+      value: fadeInUp
+      label: fadeInUp
+    -
+      value: flip
+      label: flip
+    -
+      value: flipInX
+      label: flipInX
+    -
+      value: flipInY
+      label: flipInY
+    -
+      value: flipOutX
+      label: flipOutX
+    -
+      value: flipOutY
+      label: flipOutY
+    -
+      value: rotateIn
+      label: rotateIn
+    -
+      value: rotateInDownLeft
+      label: rotateInDownLeft
+    -
+      value: rotateInDownRight
+      label: rotateInDownRight
+    -
+      value: rotateInUpLeft
+      label: rotateInUpLeft
+    -
+      value: rotateInUpRight
+      label: rotateInUpRight
+    -
+      value: zoomIn
+      label: zoomIn
+    -
+      value: zoomInDown
+      label: zoomInDown
+    -
+      value: zoomInLeft
+      label: zoomInLeft
+    -
+      value: zoomInRight
+      label: zoomInRight
+    -
+      value: zoomInUp
+      label: zoomInUp
+    -
+      value: slideInDown
+      label: slideInDown
+    -
+      value: slideInLeft
+      label: slideInLeft
+    -
+      value: slideInRight
+      label: slideInRight
+    -
+      value: slideInUp
+      label: slideInUp
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

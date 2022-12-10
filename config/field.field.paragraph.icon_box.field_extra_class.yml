@@ -1,0 +1,19 @@
+uuid: ec97cdd0-bef4-45f0-a620-65fd43c6ab70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_class
+    - paragraphs.paragraphs_type.icon_box
+id: paragraph.icon_box.field_extra_class
+field_name: field_extra_class
+entity_type: paragraph
+bundle: icon_box
+label: 'Extra Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

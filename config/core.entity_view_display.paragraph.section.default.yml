@@ -1,0 +1,85 @@
+uuid: eb68946e-56f8-41ba-a9f3-70b0f8483711
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_background_color
+    - field.field.paragraph.section.field_background_image
+    - field.field.paragraph.section.field_component
+    - field.field.paragraph.section.field_container
+    - field.field.paragraph.section.field_inner_class
+    - field.field.paragraph.section.field_text_color
+    - field.field.paragraph.section.field_wrap_class
+    - paragraphs.paragraphs_type.section
+  module:
+    - color_field
+    - entity_reference_revisions
+    - image
+    - options
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_background_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_component:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_container:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_inner_class:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_text_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_wrap_class:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 76e62de7-d1c0-4838-9c81-bc9c2710b4e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_text.field_animate
+    - field.field.paragraph.basic_text.field_basic_text
+    - paragraphs.paragraphs_type.basic_text
+  module:
+    - text
+id: paragraph.basic_text.default
+targetEntityType: paragraph
+bundle: basic_text
+mode: default
+content:
+  field_basic_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_animate: true

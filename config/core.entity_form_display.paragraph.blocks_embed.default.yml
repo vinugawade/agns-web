@@ -1,0 +1,38 @@
+uuid: 6aa567d9-056d-4c25-8a49-21658e98b0ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blocks_embed.field_custom_block
+    - field.field.paragraph.blocks_embed.field_views_block
+    - paragraphs.paragraphs_type.blocks_embed
+  module:
+    - block_field
+    - viewsreference
+id: paragraph.blocks_embed.default
+targetEntityType: paragraph
+bundle: blocks_embed
+mode: default
+content:
+  field_custom_block:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_views_block:
+    type: viewsreference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

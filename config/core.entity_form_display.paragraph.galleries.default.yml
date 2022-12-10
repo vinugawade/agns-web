@@ -1,0 +1,36 @@
+uuid: 946dfa1e-a925-481b-8d62-4875d794e2b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.galleries.field_galleries
+    - field.field.paragraph.galleries.field_layout
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.galleries
+  module:
+    - image
+    - imce
+id: paragraph.galleries.default
+targetEntityType: paragraph
+bundle: galleries
+mode: default
+content:
+  field_galleries:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+  field_layout:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

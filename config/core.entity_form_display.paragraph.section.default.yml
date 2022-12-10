@@ -1,0 +1,121 @@
+uuid: 3de06f63-0a9d-425b-9534-00fb1abfcde0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_background_color
+    - field.field.paragraph.section.field_background_image
+    - field.field.paragraph.section.field_component
+    - field.field.paragraph.section.field_container
+    - field.field.paragraph.section.field_inner_class
+    - field.field.paragraph.section.field_text_color
+    - field.field.paragraph.section.field_wrap_class
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.section
+  module:
+    - color_field
+    - field_group
+    - image
+    - imce
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_section_attributes:
+      children:
+        - field_background_image
+        - field_container
+        - field_wrap_class
+        - field_inner_class
+        - field_background_color
+        - field_text_color
+      label: 'Section Attributes'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_background_color:
+    type: color_field_widget_spectrum
+    weight: 8
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancel
+      choose_text: Choose
+      allow_empty: '1'
+    third_party_settings: {  }
+  field_background_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+  field_component:
+    type: entity_reference_paragraphs
+    weight: 7
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+  field_container:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inner_class:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_color:
+    type: color_field_widget_spectrum
+    weight: 9
+    region: content
+    settings:
+      show_input: '1'
+      show_palette: '0'
+      palette: ''
+      show_palette_only: '0'
+      show_buttons: '1'
+      cancel_text: Cancel
+      choose_text: Choose
+      allow_empty: '1'
+    third_party_settings: {  }
+  field_wrap_class:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

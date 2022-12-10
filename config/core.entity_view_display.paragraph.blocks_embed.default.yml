@@ -1,0 +1,33 @@
+uuid: d00071cd-dccf-40e9-b90c-13e566f3cf0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blocks_embed.field_custom_block
+    - field.field.paragraph.blocks_embed.field_views_block
+    - paragraphs.paragraphs_type.blocks_embed
+  module:
+    - block_field
+    - viewsreference
+id: paragraph.blocks_embed.default
+targetEntityType: paragraph
+bundle: blocks_embed
+mode: default
+content:
+  field_custom_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_views_block:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

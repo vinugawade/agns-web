@@ -1,0 +1,46 @@
+uuid: b23bf396-5424-443b-b196-c70ba1f9c58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_box.field_block_title
+    - field.field.paragraph.icon_box.field_description
+    - field.field.paragraph.icon_box.field_extra_class
+    - field.field.paragraph.icon_box.field_icon
+    - field.field.paragraph.icon_box.field_image_position
+    - paragraphs.paragraphs_type.icon_box
+  module:
+    - font_awesome
+id: paragraph.icon_box.default
+targetEntityType: paragraph
+bundle: icon_box
+mode: default
+content:
+  field_block_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icon:
+    type: font_awesome_icon
+    label: hidden
+    settings:
+      size: ''
+      fixed_width: fa-fw
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_extra_class: true
+  field_image_position: true

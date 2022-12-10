@@ -1,0 +1,23 @@
+uuid: 0c199774-3d33-4de4-80d7-fef5ecb6f334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.icon_box
+  module:
+    - options
+id: paragraph.icon_box.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: icon_box
+label: 'Icon position'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

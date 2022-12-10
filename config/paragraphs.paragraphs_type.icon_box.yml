@@ -1,0 +1,10 @@
+uuid: b36d1146-501c-40ca-8b3e-b2b758f185e6
+langcode: en
+status: true
+dependencies: {  }
+id: icon_box
+label: 'Icon Box'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

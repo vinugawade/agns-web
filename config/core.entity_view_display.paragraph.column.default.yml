@@ -1,0 +1,28 @@
+uuid: 91241804-ca3b-495b-bd7c-bc4261882046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.column.field_animate
+    - field.field.paragraph.column.field_component
+    - field.field.paragraph.column.field_extra_class
+    - paragraphs.paragraphs_type.column
+  module:
+    - entity_reference_revisions
+id: paragraph.column.default
+targetEntityType: paragraph
+bundle: column
+mode: default
+content:
+  field_component:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_animate: true
+  field_extra_class: true

@@ -1,0 +1,21 @@
+uuid: 102eacf9-b30f-4e12-8109-a60d1f25c169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_class
+    - paragraphs.paragraphs_type.block_title
+id: paragraph.block_title.field_extra_class
+field_name: field_extra_class
+entity_type: paragraph
+bundle: block_title
+label: 'Extra Class'
+description: 'text-left  text-right  text-center'
+required: false
+translatable: true
+default_value:
+  -
+    value: text-left
+default_value_callback: ''
+settings: {  }
+field_type: string

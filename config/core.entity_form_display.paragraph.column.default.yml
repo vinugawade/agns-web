@@ -1,0 +1,45 @@
+uuid: b206ed9b-f00a-4d46-ad41-5eed90a5e6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.column.field_animate
+    - field.field.paragraph.column.field_component
+    - field.field.paragraph.column.field_extra_class
+    - paragraphs.paragraphs_type.column
+  module:
+    - paragraphs
+id: paragraph.column.default
+targetEntityType: paragraph
+bundle: column
+mode: default
+content:
+  field_animate:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_component:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_extra_class:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

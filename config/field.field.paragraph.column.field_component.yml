@@ -1,0 +1,38 @@
+uuid: 7f26e36b-8b53-4f1b-9087-51071a50cd40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+id: paragraph.column.field_component
+field_name: field_component
+entity_type: paragraph
+bundle: column
+label: Component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      column: column
+      section: section
+    negate: 1
+    target_bundles_drag_drop:
+      basic_text:
+        weight: 4
+        enabled: false
+      column:
+        weight: 5
+        enabled: true
+      section:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

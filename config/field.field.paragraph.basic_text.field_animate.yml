@@ -1,0 +1,21 @@
+uuid: 8dd6d518-a130-4708-abc8-5b5e51730067
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animate
+    - paragraphs.paragraphs_type.basic_text
+  module:
+    - options
+id: paragraph.basic_text.field_animate
+field_name: field_animate
+entity_type: paragraph
+bundle: basic_text
+label: Animate
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

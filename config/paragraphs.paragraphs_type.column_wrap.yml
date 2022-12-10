@@ -1,0 +1,10 @@
+uuid: 98aff791-6c00-4683-b322-4ac023598d30
+langcode: en
+status: true
+dependencies: {  }
+id: column_wrap
+label: 'Column Wrap'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

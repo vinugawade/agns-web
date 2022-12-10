@@ -1,0 +1,19 @@
+uuid: 6d8bfade-b7d5-45d1-a9fe-24c9c47269ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.counter
+id: paragraph.counter.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: counter
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

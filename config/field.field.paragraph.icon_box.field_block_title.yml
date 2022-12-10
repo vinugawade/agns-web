@@ -1,0 +1,19 @@
+uuid: a0e34e6e-4127-4062-b512-15b8a96fe100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_title
+    - paragraphs.paragraphs_type.icon_box
+id: paragraph.icon_box.field_block_title
+field_name: field_block_title
+entity_type: paragraph
+bundle: icon_box
+label: 'Block Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

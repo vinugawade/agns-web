@@ -1,0 +1,19 @@
+uuid: 7a4c78cf-a351-44dc-8cfc-3eeeb58d116e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wrap_class
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_wrap_class
+field_name: field_wrap_class
+entity_type: paragraph
+bundle: slider
+label: 'Wrap Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

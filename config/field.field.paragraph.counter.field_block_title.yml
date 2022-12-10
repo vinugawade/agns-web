@@ -1,0 +1,19 @@
+uuid: b8310cc5-f6b2-4604-90d5-91ca8eb289f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_title
+    - paragraphs.paragraphs_type.counter
+id: paragraph.counter.field_block_title
+field_name: field_block_title
+entity_type: paragraph
+bundle: counter
+label: 'Block Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
