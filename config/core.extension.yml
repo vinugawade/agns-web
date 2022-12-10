@@ -7,11 +7,13 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  block_field: 0
   breakpoint: 0
   bricks: 0
   bricks_default: 0
   captcha: 0
   ckeditor: 0
+  color_field: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -27,6 +29,7 @@ module:
   editor: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -61,6 +64,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_attachment: 0
   webform_content_creator: 0
