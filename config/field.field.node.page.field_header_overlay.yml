@@ -1,0 +1,23 @@
+uuid: 8303ed96-a083-43e9-b134-3d9f9e12c511
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_overlay
+    - node.type.page
+id: node.page.field_header_overlay
+field_name: field_header_overlay
+entity_type: node
+bundle: page
+label: 'Header Transparent'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Header Transparent'
+  off_label: 'Off'
+field_type: boolean
