@@ -1,0 +1,7 @@
+extension
+*.zip
+*.psd
+composer.json
+.*
+node_modules
+CODE_OF_CONDUCT.md
