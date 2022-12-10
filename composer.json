@@ -38,7 +38,8 @@
         "drupal/block_field": "^1.0@RC",
         "drupal/viewsreference": "^1.8",
         "drupal/field_group": "^3.4",
-        "drupal/color_field": "^2.5"
+        "drupal/color_field": "^2.5",
+        "drupal/pathauto": "^1.11"
     },
     "require-dev": {
         "drupal/core-dev": "9.4.8"

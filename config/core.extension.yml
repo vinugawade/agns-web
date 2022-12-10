@@ -76,6 +76,7 @@ module:
   webform_submission_export_import: 0
   webform_templates: 0
   webform_ui: 0
+  pathauto: 1
   webform_bootstrap: 1
   content_translation: 10
   views: 10
