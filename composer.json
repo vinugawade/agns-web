@@ -49,6 +49,11 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
+        "patches": {
+            "drupal/color_field": {
+                "Warning - Implicit conversion from float to int loses precision": "https://www.drupal.org/files/issues/2022-02-23/3265958-implicit-conversion-float-int.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./web"
