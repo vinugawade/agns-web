@@ -1,14 +1,14 @@
 global-styling:
   css:
     theme:
-      https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap: { type: external, minified: true }
-      https://unpkg.com/flickity@2/dist/flickity.min.css: { type: external, minified: true }
-      https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css: { type: external, minified: true }
+      https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap: { }
+      https://unpkg.com/flickity@2/dist/flickity.min.css: { }
+      https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css: { }
       assets/css/libs.css: { }
       assets/css/style.css: { }
       assets/css/responsive.css: { }
   js:
-    https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js: { type: external, minified: true }
+    https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js: { }
     assets/js/plugins.js: { }
     assets/js/custom.js: { }
   dependencies:
