@@ -1,0 +1,29 @@
+uuid: f7143c10-6344-48f5-be3e-b725b35a6932
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agns_plan_type
+    - node.type.agns_plans
+    - taxonomy.vocabulary.agns_plan_types
+id: node.agns_plans.field_agns_plan_type
+field_name: field_agns_plan_type
+entity_type: node
+bundle: agns_plans
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      agns_plan_types: agns_plan_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

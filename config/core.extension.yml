@@ -23,7 +23,6 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
-  devel_generate: 0
   devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
@@ -32,7 +31,9 @@ module:
   field_group: 0
   field_ui: 0
   file: 0
+  file_delete: 0
   filter: 0
+  filter_twig: 0
   font_awesome: 0
   help: 0
   history: 0
@@ -44,6 +45,8 @@ module:
   link: 0
   locale: 0
   lp_fontawesome: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -63,6 +66,8 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0

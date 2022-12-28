@@ -1,0 +1,37 @@
+uuid: 70127f4e-b0b2-4639-8a17-412aaefe08c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agns_plans.body
+    - field.field.node.agns_plans.field_agns_plan_type
+    - field.field.node.agns_plans.field_agns_price
+    - field.field.node.agns_plans.field_agns_service_area
+    - node.type.agns_plans
+  module:
+    - text
+    - user
+id: node.agns_plans.teaser
+targetEntityType: node
+bundle: agns_plans
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_agns_plan_type: true
+  field_agns_price: true
+  field_agns_service_area: true
+  langcode: true

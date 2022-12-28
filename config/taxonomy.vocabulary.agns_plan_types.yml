@@ -1,0 +1,8 @@
+uuid: 04c51659-7433-49e2-8258-61af2d3bf963
+langcode: en
+status: true
+dependencies: {  }
+name: 'Plan Types'
+vid: agns_plan_types
+description: ''
+weight: 0

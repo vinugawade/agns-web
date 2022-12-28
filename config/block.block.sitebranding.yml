@@ -8,8 +8,8 @@ dependencies:
     - agns_theme
 id: sitebranding
 theme: agns_theme
-region: nav_main
-weight: -5
+region: nav_branding
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:

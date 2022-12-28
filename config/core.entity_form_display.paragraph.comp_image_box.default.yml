@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.comp_image_box
   module:
     - image
+    - imce
     - link
 id: paragraph.comp_image_box.default
 targetEntityType: paragraph
@@ -50,7 +51,9 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
   field_image_position:
     type: options_select
     weight: 3

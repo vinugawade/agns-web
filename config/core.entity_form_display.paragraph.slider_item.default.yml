@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.slider_item
   module:
     - image
+    - imce
     - link
 id: paragraph.slider_item.default
 targetEntityType: paragraph
@@ -58,7 +59,9 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
   field_subtitle:
     type: string_textfield
     weight: 0

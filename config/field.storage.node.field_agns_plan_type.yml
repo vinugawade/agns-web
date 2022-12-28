@@ -1,0 +1,20 @@
+uuid: fbece2c8-2fd6-4ac5-a934-1410852e6b6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_agns_plan_type
+field_name: field_agns_plan_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

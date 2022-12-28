@@ -1,0 +1,29 @@
+uuid: a2fc1f84-1f1d-461b-9da4-100f987a9b5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agns_service_area
+    - node.type.agns_plans
+    - taxonomy.vocabulary.agns_service_area
+id: node.agns_plans.field_agns_service_area
+field_name: field_agns_service_area
+entity_type: node
+bundle: agns_plans
+label: Area
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      agns_service_area: agns_service_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

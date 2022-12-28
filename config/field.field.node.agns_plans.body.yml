@@ -1,0 +1,23 @@
+uuid: 60ff7a7b-9832-405e-a45f-f2e42e9c33d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.agns_plans
+  module:
+    - text
+id: node.agns_plans.body
+field_name: body
+entity_type: node
+bundle: agns_plans
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

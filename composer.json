@@ -41,7 +41,8 @@
         "drupal/pathauto": "^1.11",
         "drupal/filter_twig": "^2.1",
         "drupal/twig_tweak": "^3.2",
-        "drupal/twig-twig": "^2.0"
+        "drupal/twig-twig": "^2.0",
+        "drupal/file_delete": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "9.5.0"

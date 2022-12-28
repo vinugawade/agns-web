@@ -45,18 +45,10 @@ bundle: section
 mode: default
 content:
   field_background_color:
-    type: color_field_widget_spectrum
+    type: color_field_widget_html5
     weight: 8
     region: content
-    settings:
-      show_input: '1'
-      show_palette: '0'
-      palette: ''
-      show_palette_only: '0'
-      show_buttons: '1'
-      cancel_text: Cancel
-      choose_text: Choose
-      allow_empty: '1'
+    settings: {  }
     third_party_settings: {  }
   field_background_image:
     type: image_image
@@ -95,18 +87,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_text_color:
-    type: color_field_widget_spectrum
+    type: color_field_widget_html5
     weight: 9
     region: content
-    settings:
-      show_input: '1'
-      show_palette: '0'
-      palette: ''
-      show_palette_only: '0'
-      show_buttons: '1'
-      cancel_text: Cancel
-      choose_text: Choose
-      allow_empty: '1'
+    settings: {  }
     third_party_settings: {  }
   field_wrap_class:
     type: string_textfield

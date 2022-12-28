@@ -1,0 +1,11 @@
+uuid: 7db23cb6-af59-40f2-bfd2-68b07c1d6bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.agns_plans
+id: node.agns_plans
+target_entity_type_id: node
+target_bundle: agns_plans
+default_langcode: site_default
+language_alterable: false

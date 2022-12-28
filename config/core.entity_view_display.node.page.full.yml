@@ -1,8 +1,9 @@
-uuid: 4e0abdc1-e3da-4037-a6e9-0100ddb70e92
+uuid: 2bb4d5dd-dc7c-4efb-9230-12bf6aa47f11
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_blocks_builder
     - field.field.node.page.field_header_overlay
@@ -17,10 +18,10 @@ third_party_settings:
     allow_custom: false
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
-id: node.page.default
+id: node.page.full
 targetEntityType: node
 bundle: page
-mode: default
+mode: full
 content:
   field_blocks_builder:
     type: entity_reference_revisions_entity_view

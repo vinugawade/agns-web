@@ -1,0 +1,8 @@
+uuid: 9f10706d-010b-4d83-ae05-07361ffd9c15
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Areas'
+vid: agns_service_area
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: 30fcacd7-c38d-45e3-8421-f82497c130ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.agns_plan_types
+id: taxonomy_term.agns_plan_types
+target_entity_type_id: taxonomy_term
+target_bundle: agns_plan_types
+default_langcode: site_default
+language_alterable: false
